@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, ImageBackground, ActivityIndicator, View } from 'react-native';
+import { CachedImage } from 'react-native-cached-image';
 
 class ImageLoad extends React.Component {
   static propTypes = {
@@ -59,7 +60,7 @@ class ImageLoad extends React.Component {
                 color={loadingStyle ? loadingStyle.color : 'gray'}
               />
             }
-            <Image
+            <CachedImage
               style={placeholderStyle ? placeholderStyle : [styles.imagePlaceholderStyles, customImagePlaceholderDefaultStyle]}
               source={placeholderSource ? placeholderSource : require('./Images/empty-image.png')}
             >
