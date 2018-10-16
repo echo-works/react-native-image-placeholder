@@ -64,7 +64,7 @@ class ImageLoad extends React.Component {
               style={placeholderStyle ? placeholderStyle : [styles.imagePlaceholderStyles, customImagePlaceholderDefaultStyle]}
               source={placeholderSource ? placeholderSource : require('./Images/empty-image.png')}
             >
-            </Image>
+            </CachedImage>
           </View>
         }
         {
